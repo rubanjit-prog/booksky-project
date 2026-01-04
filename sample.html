@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="book-container">
+        <div class="container">
+            <h2>Swiss Diaries</h2>
+            <h5>Ruban Jit R</h5>
+            <p>Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps.
+            Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden
+            chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries,
+            and Swiss watches and chocolate are world renowned.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h6>Add Book</h6>
+        <form>
+            <input placeholder="book title" id="book-title-input">
+            <input type="text" placeholder="book author" id="book-author-input">
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-book">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
